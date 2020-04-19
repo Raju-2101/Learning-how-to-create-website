@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.logo {
+  position: absolute;
+  top: 50px;
+  left: 10%;
+  cursor: pointer;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.title .title-content {
+  margin: 200px 30px auto 10%;
+  width: 500px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.title .title-content h2 {
+  font-weight: 300;
+  font-size: 4.5em;
+  letter-spacing: 10px;
+  color: #ce9797;
+  text-transform: uppercase;
+  line-height: 80px;
+}
+
+.title .title-content h1 {
+  font-size: 5em;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 80px;
+  letter-spacing: 20px;
+  color: #423a3a;
+}
+
+.title .title-content p {
+  color: #ce9797;
+  line-height: 30px;
+  margin-top: 30px;
+}
+
+.title .title-content .input {
+  margin-top: 50px;
+  position: relative;
+}
+
+.title .title-content .input input {
+  width: 100%;
+  height: 60px;
+  border: 0.1px solid #f8bfbf;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-family: inherit;
+  font-size: 1em;
+  color: #423a3a;
+}
+
+.title .title-content .input input:focus {
+  border: 1px solid #ee8c8c;
+}
+
+.title .title-content .input .error-icon {
+  position: absolute;
+  right: 120px;
+  top: 20px;
+  display: none;
+}
+
+.title .title-content .input button {
+  position: absolute;
+  border: none;
+  background: -webkit-gradient(linear, left top, right top, from(#f8bfbf), to(#ee8c8c));
+  background: linear-gradient(to right, #f8bfbf, #ee8c8c);
+  height: 60px;
+  width: 105px;
+  border-radius: 50px;
+  right: 0;
+  -webkit-box-shadow: 2px 3px 10px #8d8b8b;
+          box-shadow: 2px 3px 10px #8d8b8b;
+  cursor: pointer;
+}
+
+.title .title-content .input button:hover {
+  background: #f8bfbf;
+}
+
+.title .title-content .input .error-msg {
+  color: #f96464;
+  position: absolute;
+  bottom: -30px;
+  left: 10%;
+  display: none;
+}
+
+.title .hero {
+  width: 700px;
+  height: 100vh;
+}
+
+@media screen and (max-width: 1380px) {
+  .logo {
+    left: 5%;
+  }
+  .title .title-content {
+    margin-left: 5%;
+  }
+  .title .title-content h2 {
+    font-size: 3em;
+    line-height: 60px;
+  }
+  .title .title-content h1 {
+    font-size: 3.5em;
+    letter-spacing: 15px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .logo {
+    top: 50px;
+  }
+  .title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .title .title-content {
+    width: auto;
+  }
+  .title .hero {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top: 120px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .title .title-content {
+    margin: 200px 30px;
+  }
+  .title .hero {
+    width: 100%;
+    height: auto;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

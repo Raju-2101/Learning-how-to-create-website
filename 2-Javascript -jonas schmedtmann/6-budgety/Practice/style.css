@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+p {
+  color: #444444;
+}
+
+.space {
+  height: 412px;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+.fixed .top {
+  text-align: center;
+  background: url(./images/back.jpg) no-repeat;
+  background-size: 100% 100%;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.fixed .top h3 {
+  font-weight: 300;
+  line-height: 50px;
+  padding-top: 20px;
+  font-size: 1.2em;
+}
+
+.fixed .top h1 {
+  font-weight: 300;
+  font-size: 3em;
+}
+
+.fixed .top .inc,
+.fixed .top .exp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px auto;
+  font-size: 0.9em;
+  width: 400px;
+  height: 50px;
+  padding: 10px 60px 10px 30px;
+  text-transform: uppercase;
+}
+
+.fixed .top .inc {
+  background-color: #28b9b5;
+}
+
+.fixed .top .exp {
+  background-color: #ff5049;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.fixed .top .exp .total-exp-percentage {
+  position: absolute;
+  background-color: #ff736d;
+  border-radius: 5px;
+  right: 15px;
+  font-size: 0.7em;
+  padding: 5px 8px;
+  color: white;
+}
+
+.fixed .input {
+  text-align: center;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #e7e7e7;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+.fixed .input .error {
+  position: absolute;
+  width: 280px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #ff736d;
+  border-radius: 2px;
+  color: white;
+  font-size: 1em;
+  -webkit-animation: error 2s;
+          animation: error 2s;
+  display: none;
+  opacity: 0;
+  z-index: -1;
+}
+
+.fixed .input .error-msg {
+  display: initial;
+}
+
+@-webkit-keyframes error {
+  from {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: -1;
+  }
+  to {
+    -webkit-transform: translate(-50%, -200%);
+            transform: translate(-50%, -200%);
+    opacity: 1;
+    z-index: 1;
+  }
+}
+
+@keyframes error {
+  from {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: -1;
+  }
+  to {
+    -webkit-transform: translate(-50%, -200%);
+            transform: translate(-50%, -200%);
+    opacity: 1;
+    z-index: 1;
+  }
+}
+
+.fixed .input .type,
+.fixed .input .desc,
+.fixed .input .value {
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 0.9em;
+  margin-left: 10px;
+}
+
+.fixed .input .type:focus,
+.fixed .input .desc:focus,
+.fixed .input .value:focus {
+  border: 1px solid #28b9b5;
+}
+
+.fixed .input .type {
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.fixed .input .desc {
+  width: 500px;
+}
+
+.fixed .input .value {
+  width: 100px;
+}
+
+.fixed .input .btn {
+  border: none;
+  background-color: inherit;
+  vertical-align: middle;
+  margin-left: 10px;
+  cursor: pointer;
+  fill: #28b9b5;
+  width: 30px;
+}
+
+.fixed .input .red-border:focus {
+  border: 1px solid #ff5049;
+}
+
+.fixed .input .red {
+  fill: #ff5049;
+}
+
+.bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 0;
+  padding: 30px 20%;
+}
+
+.bottom .inc-items,
+.bottom .exp-items {
+  width: 50%;
+  margin: 30px;
+}
+
+.bottom .inc-items h2,
+.bottom .exp-items h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2em;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e7e7e7;
+  cursor: pointer;
+}
+
+.bottom .inc-items .inc-item,
+.bottom .inc-items .exp-item,
+.bottom .exp-items .inc-item,
+.bottom .exp-items .exp-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 50px;
+  border-bottom: 1px solid #e7e7e7;
+  position: relative;
+}
+
+.bottom .inc-items .inc-item .inc-number,
+.bottom .inc-items .inc-item .exp-number,
+.bottom .inc-items .exp-item .inc-number,
+.bottom .inc-items .exp-item .exp-number,
+.bottom .exp-items .inc-item .inc-number,
+.bottom .exp-items .inc-item .exp-number,
+.bottom .exp-items .exp-item .inc-number,
+.bottom .exp-items .exp-item .exp-number {
+  position: absolute;
+}
+
+.bottom .inc-items .inc-item .inc-number,
+.bottom .inc-items .exp-item .inc-number,
+.bottom .exp-items .inc-item .inc-number,
+.bottom .exp-items .exp-item .inc-number {
+  color: #28b9b5;
+}
+
+.bottom .inc-items .inc-item .exp-number,
+.bottom .inc-items .exp-item .exp-number,
+.bottom .exp-items .inc-item .exp-number,
+.bottom .exp-items .exp-item .exp-number {
+  color: #ff5049;
+}
+
+.bottom .inc-items .inc-item .inc-desc,
+.bottom .inc-items .inc-item .exp-desc,
+.bottom .inc-items .exp-item .inc-desc,
+.bottom .inc-items .exp-item .exp-desc,
+.bottom .exp-items .inc-item .inc-desc,
+.bottom .exp-items .inc-item .exp-desc,
+.bottom .exp-items .exp-item .inc-desc,
+.bottom .exp-items .exp-item .exp-desc {
+  margin-left: 30px;
+}
+
+.bottom .inc-items .inc-item .inc-value,
+.bottom .inc-items .inc-item .exp-value,
+.bottom .inc-items .inc-item .inc-desc,
+.bottom .inc-items .inc-item .exp-desc,
+.bottom .inc-items .inc-item .exp-percent,
+.bottom .inc-items .exp-item .inc-value,
+.bottom .inc-items .exp-item .exp-value,
+.bottom .inc-items .exp-item .inc-desc,
+.bottom .inc-items .exp-item .exp-desc,
+.bottom .inc-items .exp-item .exp-percent,
+.bottom .exp-items .inc-item .inc-value,
+.bottom .exp-items .inc-item .exp-value,
+.bottom .exp-items .inc-item .inc-desc,
+.bottom .exp-items .inc-item .exp-desc,
+.bottom .exp-items .inc-item .exp-percent,
+.bottom .exp-items .exp-item .inc-value,
+.bottom .exp-items .exp-item .exp-value,
+.bottom .exp-items .exp-item .inc-desc,
+.bottom .exp-items .exp-item .exp-desc,
+.bottom .exp-items .exp-item .exp-percent {
+  cursor: default;
+  -webkit-transition: all 0.5s cubic-bezier(0.08, 0.82, 0.17, 1);
+  transition: all 0.5s cubic-bezier(0.08, 0.82, 0.17, 1);
+}
+
+.bottom .inc-items .inc-item .delete,
+.bottom .inc-items .exp-item .delete,
+.bottom .exp-items .inc-item .delete,
+.bottom .exp-items .exp-item .delete {
+  background-color: inherit;
+  border: none;
+  display: none;
+  position: absolute;
+  right: 10px;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.bottom .inc-items .inc-item:hover .inc-value,
+.bottom .inc-items .exp-item:hover .inc-value,
+.bottom .exp-items .inc-item:hover .inc-value,
+.bottom .exp-items .exp-item:hover .inc-value {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+
+.bottom .inc-items .inc-item:hover .exp-value,
+.bottom .inc-items .exp-item:hover .exp-value,
+.bottom .exp-items .inc-item:hover .exp-value,
+.bottom .exp-items .exp-item:hover .exp-value {
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+}
+
+.bottom .inc-items .inc-item:hover .exp-percent,
+.bottom .inc-items .exp-item:hover .exp-percent,
+.bottom .exp-items .inc-item:hover .exp-percent,
+.bottom .exp-items .exp-item:hover .exp-percent {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.bottom .inc-items .inc-item:hover .delete,
+.bottom .inc-items .exp-item:hover .delete,
+.bottom .exp-items .inc-item:hover .delete,
+.bottom .exp-items .exp-item:hover .delete {
+  display: initial;
+  opacity: 1;
+}
+
+.bottom .inc-items h2,
+.bottom .inc-items h4 {
+  color: #28b9b5;
+}
+
+.bottom .inc-items .inc-item .delete svg path {
+  fill: #28b9b5;
+}
+
+.bottom .exp-items h2,
+.bottom .exp-items h4 {
+  color: #ff5049;
+}
+
+.bottom .exp-items .exp-item .exp-percent {
+  position: absolute;
+  background-color: #ff736d;
+  border-radius: 5px;
+  font-size: 0.7em;
+  padding: 10px 5px;
+  color: white;
+  line-height: 0;
+  right: 20px;
+}
+
+.bottom .exp-items .exp-item .exp-value {
+  margin-right: 80px;
+}
+
+.bottom .exp-items .exp-item .delete svg path {
+  fill: #ff5049;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,114 @@
+body {
+  color: #40514E;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  margin: 50px auto 0 auto;
+font-family: 'Sacramento', cursive;
+font-size: 5.625rem;
+color: #66BFBF;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #66BFBF;
+  font-weight: normal;
+font-family: 'Roboto Condensed', sans-serif;
+}
+
+h3 {
+  color: #11999E;
+}
+
+hr {
+ border: dotted #EAF6F6 6px;
+ border-bottom: none;
+ width: 4%;
+ margin: 50px auto;
+}
+
+a{
+  color: #11999E;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin:10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EAF6F6;
+
+}
+
+.paragraph {
+  width:50%
+  margin:auto;
+}
+
+.profile {
+  width: 50%;
+  margin: 100px auto 10px auto;
+}
+
+
+.man {
+  width: 15%
+}
+
+.top-container {
+  background-color: #ccffff;
+  position: relative;
+  padding-top: 100px;
+}
+
+.bottom-container {
+background-color: #66BFBF;
+padding: 40px 0 20px;
+}
+
+.top-cloud {
+  position:absolute;
+  right: 650px;
+  top:50px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 650px;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 150px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.computer {
+  width: 25%;
+  float: left;
+  padding-right: 30px;
+}
+
+.chillies {
+  width: 25%;
+  float: right;
+  padding-left: 30px;
+}
+
+.contact-me {
+  margin-bottom: 100px;
+}
+
+.contact-paragraph {
+  width: 40%;
+  margin: 40px auto 60px auto;
+}
+
+.copyright {
+  color: white;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}

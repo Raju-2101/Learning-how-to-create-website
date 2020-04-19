@@ -1,0 +1,19 @@
+{{> header}}
+<div class="form">
+  <h1>Signup for Free.</h1>
+  {{> errormsg}}
+  <form action="/signup" method="post">
+    <label for="name">Name</label>
+    <input required name="name" autofocus type="text" placeholder="Name" />
+    <label for="email">Email</label>
+    <input required class="email" type="email" placeholder="Email" name="email" />
+    <label for="password">Password</label>
+    <input required class="password" type="password" placeholder="Password" name="password" />
+    <label for="confirmPassword">Confirm password</label>
+    <input required class="confirmPassword" type="password" placeholder="Confirm password" name="confirmPassword" />
+    <button class="submit" type="submit"><a href="/">Signup</a></button>
+    <p class="account">Already have an account? <a href="/login">login</a></p>
+  </form>
+</div>
+
+{{> footer}}

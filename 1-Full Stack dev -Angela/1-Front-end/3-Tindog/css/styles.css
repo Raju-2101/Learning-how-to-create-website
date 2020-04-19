@@ -1,0 +1,188 @@
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+
+h1, h2, h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+
+
+/* color */
+
+.color-white {
+  background-color: #fff;
+}
+
+.color-pink {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.color-orange {
+  background-Color: #ef8172;
+  color: #fff;
+}
+/* title-text */
+
+#title {
+  text-align: left;
+}
+
+
+.big-footer {
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.small-foot {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* navigation */
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "ubuntu";
+  font-size: 2.5rem;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-weight: lighter;
+  font-size: 1.2rem;
+}
+
+.download-button {
+  margin: 5% 3% 5% 0;
+
+}
+
+.title-image {
+  width: 50%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 40%;
+
+}
+
+/* mobile-version */
+@media screen and (max-width: 1046px) {
+
+#title {
+  text-align: center;
+
+}
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+
+}
+
+/* features */
+
+.fontawesome {
+  font-size: 4rem;
+  Color: #ef8172;
+}
+
+.fontawesome:hover {
+  color: #ff3352;
+}
+
+#features {
+  padding: 7% 15%;
+  position: relative;
+}
+
+.fontawesome-width {
+
+  padding: 5%;
+}
+
+.features-h3 {
+  font-weight: 900;
+}
+
+/* testimonial */
+
+
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+/* press */
+
+#press {
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 10%;
+  margin: 20px 20px 50px;
+}
+
+/* pricing */
+
+#pricing {
+  padding: 100px;
+}
+
+.pricing-padding {
+  padding: 3% 2%;
+}
+
+
+
+ .pricing-h3 {
+     font-weight: 900;
+ }
+
+/* Call to Action */
+
+
+
+.Call-to-Action {
+  padding: 7% 30% ;
+}
+
+/* footer */
+
+#footer {
+  margin-bottom: 7%;
+}
+
+.footer-font {
+  margin: 7% 0.5% 2%;
+  font-size: 1.2rem;
+}
+
+.footer-font:hover {
+  font-size: 2rem;
+}

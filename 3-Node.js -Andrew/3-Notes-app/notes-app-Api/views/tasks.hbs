@@ -1,0 +1,46 @@
+{{> header}}
+<div class="user">
+  <div class="profile">
+    <img src="../images/default user img.png" alt="user image">
+    <div class="info">
+      <h3 class="name">{{name}}</h3>
+      <p>{{email}}</p>
+    </div>
+  </div>
+  <div class="options">
+    <ul class="tooltip">
+      <li> <a href="/profile">Profile</a> </li>
+      <li> <a href="/logout">Logout</a> </li>
+    </ul>
+    <i></i>
+  </div>
+</div>
+
+<div class="form">
+  <form action="/tasks" method="post">
+    <label for="description">Description</label>
+    <textarea name="description" cols="30" rows="1" placeholder="new things to do"></textarea>
+    <button class="submit" type="submit"><a href="/">Add task</a></button>
+  </form>
+</div>
+
+<div class="tasks">
+  <h3>tasks</h3>
+  <div class="task" id="id">
+    <p class="serial-number">1.</p>
+    <div class="desc">
+      <input type="checkbox" name="status" />
+      <p>fuck that shit</p>
+    </div>
+    <button>X</button>
+  </div>
+</div class="tasks">
+<!-- <div class="task" id="id">
+        <p class="serial-number">1.</p>
+        <div class="desc">
+          <input type="checkbox" name="status" />
+          <p>fuck that shit</p>
+        </div>
+        <button>X</button>
+      </div> -->
+{{> footer}}

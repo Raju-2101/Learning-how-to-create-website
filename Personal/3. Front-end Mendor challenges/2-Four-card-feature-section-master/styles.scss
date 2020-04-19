@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  text-align: center;
+  h1,
+  h2,
+  h3 {
+    color: hsl(234, 12%, 34%);
+  }
+
+  h1 {
+    font-weight: 200;
+    font-size: 2.5em;
+    margin: 100px 0 0;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+
+  p {
+    color: hsl(229, 6%, 66%);
+    width: 500px;
+    margin: auto;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  margin-top: 30px;
+  .box {
+    width: 400px;
+    height: 250px;
+    text-align: left;
+    border-radius: 9px;
+    box-shadow: 2px 5px 30px hsl(229, 6%, 66%);
+    padding: 30px;
+    margin: 20px;
+
+    h3 {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    p {
+      width: auto;
+      text-align: left;
+      line-height: 30px;
+    }
+
+    img {
+      display: none;
+    }
+  }
+  .cyan {
+    border-top: 5px solid hsl(180, 62%, 55%);
+    background: url(./images/icon-supervisor.svg) 300px 150px no-repeat;
+  }
+  .red {
+    border-top: 5px solid hsl(0, 78%, 62%);
+    background: url(./images/icon-team-builder.svg) 300px 150px no-repeat;
+    margin-bottom: 40px;
+  }
+  .orange {
+    border-top: 5px solid hsl(34, 97%, 64%);
+    background: url(./images/icon-karma.svg) 300px 150px no-repeat;
+  }
+  .blue {
+    border-top: 5px solid hsl(212, 86%, 64%);
+    background: url(./images/icon-calculator.svg) 300px 150px no-repeat;
+  }
+}
+
+@media screen and (max-width: 1340px) {
+  .content {
+    .box {
+      width: 300px;
+      background-position: 200px 150px;
+    }
+  }
+}
+
+@media screen and (max-width: 1031px) {
+  body {
+    h1,
+    h2 {
+      font-size: 1.5em;
+    }
+    p {
+      width: 315px;
+    }
+  }
+  .content {
+    flex-direction: column;
+    .box {
+      width: 300px;
+      background-position: 220px 170px;
+    }
+  }
+}

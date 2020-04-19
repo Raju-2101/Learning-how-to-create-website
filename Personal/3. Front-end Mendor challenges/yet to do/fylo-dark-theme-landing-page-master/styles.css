@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #181f2a;
+  color: white;
+}
+
+.intro {
+  background-color: #1c2431;
+  background-image: url(./images/bg-curvy-desktop.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 500px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Raleway";
+  font-weight: 700;
+}
+
+p,
+li {
+  font-family: "Open Sans";
+}
+
+button {
+  background-image: linear-gradient(135deg, #65e2d9, #339ecc);
+  color: inherit;
+  font-family: "Open Sans";
+  border: none;
+  padding: 20px 90px;
+  font-weight: 700;
+  border-radius: 50px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-bottom: 200px;
+}
+
+button:hover {
+  background-image: none;
+  background-color: #339ecc;
+}
+
+.nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px 5%;
+}
+
+.nav-bar .logo {
+  cursor: pointer;
+}
+
+.nav-bar .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  font-weight: 700;
+}
+
+.nav-bar .nav-links li {
+  margin-left: 60px;
+}
+
+.nav-bar .nav-links li a {
+  color: inherit;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+}
+
+.nav-bar .nav-links li a:hover {
+  color: #339ecc;
+}
+
+.title {
+  text-align: center;
+  width: 850px;
+  margin: auto;
+}
+
+.title h1 {
+  margin: 50px 0;
+  font-size: 2.5em;
+}
+
+.title p {
+  font-size: 1.2em;
+  margin: 0 100px 30px;
+}
+
+.about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 80px;
+}
+
+.about-us .components .child {
+  width: 400px;
+  text-align: center;
+  position: relative;
+  height: 300px;
+}
+
+.about-us .components .child:nth-child(1) {
+  margin-bottom: 100px;
+}
+
+.about-us .components .child img {
+  position: absolute;
+  top: -110px;
+  left: 40%;
+  cursor: pointer;
+}
+
+.about-us .components .child h2 {
+  margin: 30px 0 10px;
+}
+
+.about-us .components .child p {
+  line-height: 30px;
+}
+
+.contact-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-us img {
+  cursor: pointer;
+}
+
+.contact-us .contact {
+  width: 600px;
+  margin-left: 100px;
+}
+
+.contact-us .contact h1 {
+  font-size: 2.5em;
+  width: 400px;
+}
+
+.contact-us .contact p {
+  line-height: 30px;
+  margin: 20px 0;
+}
+
+.contact-us .contact .link {
+  padding: 2px 0;
+  width: 180px;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.contact-us .contact .link .words {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-us .contact .link .line {
+  margin-top: 3px;
+  width: 100%;
+  height: 2px;
+  background-color: #65e2d9;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.contact-us .contact .link:hover .line {
+  width: 0;
+}
+
+.contact-us .contact .link a {
+  color: #65e2d9;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 100px;
+  position: relative;
+}
+
+.reviews .quotes {
+  position: absolute;
+  left: 2%;
+  top: -40px;
+}
+
+.reviews .review {
+  width: 400px;
+  padding: 30px 30px 10px;
+  background-color: #202a3c;
+  position: relative;
+  border-radius: 10px;
+  margin: 0 20px;
+  -webkit-box-shadow: 10px 10px 5px black;
+          box-shadow: 10px 10px 5px black;
+  cursor: pointer;
+}
+
+.reviews .review .profile {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviews .review .profile .people {
+  border-radius: 50%;
+  width: 40px;
+  position: relative;
+  left: -10px;
+}
+
+.reviews .review .profile .name p {
+  font-size: 0.6em;
+}
+
+.sign-up {
+  width: 60%;
+  background-color: #1c2431;
+  margin: 200px auto -150px;
+  text-align: center;
+  padding: 50px 50px 0;
+  border-radius: 10px;
+  height: 350px;
+  position: relative;
+  z-index: 1;
+  -webkit-box-shadow: 10px 10px 5px black;
+          box-shadow: 10px 10px 5px black;
+}
+
+.sign-up h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.sign-up p {
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.sign-up form input {
+  width: 50%;
+  height: 50px;
+  border-radius: 50px;
+  padding: 20px 30px;
+  font-size: 15px;
+  font-family: "Open Sans";
+}
+
+.sign-up form button {
+  padding: 15px 30px;
+  margin-left: 30px;
+}
+
+.footer {
+  background-color: #0b1523;
+  position: relative;
+  z-index: 0;
+  padding-top: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer img {
+  cursor: pointer;
+}
+
+.footer .extras li {
+  list-style-type: none;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.footer .extras p {
+  line-height: 30px;
+}
+
+.footer .content {
+  width: 350px;
+}
+
+.footer .content .logo {
+  position: absolute;
+  top: 200px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .sign-up {
+    height: auto;
+    padding-bottom: 50px;
+  }
+  .sign-up form input,
+  .sign-up form button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .title {
+    width: auto;
+    margin: 0 30px;
+  }
+  .title img {
+    width: 100%;
+  }
+  .title p {
+    margin: 0 0 30px;
+  }
+  .about-us {
+    display: initial;
+  }
+  .about-us .components .child {
+    margin: 0 10%;
+    width: auto;
+  }
+  .contact-us {
+    display: initial;
+  }
+  .contact-us img {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .contact-us .contact {
+    margin: 0 10%;
+    width: auto;
+  }
+  .contact-us .contact h1 {
+    width: auto;
+  }
+  .contact-us .contact .link {
+    position: relative;
+  }
+  .contact-us .contact .link .arrow {
+    width: 16px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+  }
+  .reviews {
+    display: inherit;
+  }
+  .reviews .review {
+    margin: 50px auto;
+  }
+  .footer {
+    display: inherit;
+  }
+}
+
+@media screen and (max-width: 443px) {
+  .reviews .review {
+    width: 80%;
+    margin: 50px 10%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

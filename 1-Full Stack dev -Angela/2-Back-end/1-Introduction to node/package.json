@@ -1,0 +1,14 @@
+{
+  "name": "raju",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "it's me bitch",
+  "license": "ISC",
+  "dependencies": {
+    "marvel-characters": "^1.0.3"
+  }
+}

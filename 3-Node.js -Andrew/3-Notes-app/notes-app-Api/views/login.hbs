@@ -1,0 +1,17 @@
+{{> header}}
+
+<body>
+  <div class="form">
+    <h1>login</h1>
+    {{> errormsg}}
+    <form action="/login" method="post">
+      <label for="email">Email</label>
+      <input required autofocus type="email" name="email" placeholder="Email" />
+      <label for="password">password</label>
+      <input required type="password" placeholder="Password" name="password" />
+      <button class="submit" type="submit"><a href="/">log in</a></button>
+    </form>
+    <p class="account">don't have an account? <a href="/signup">create account for free</a></p>
+  </div>
+
+  {{> footer}}

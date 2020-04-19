@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget App practice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="space"></div>
+    <div class="fixed">
+      <div class="top">
+        <h3>Available Budget in <span>%Month%</span></h3>
+        <h1 class="budget">2400</h1>
+        <div class="inc">
+          <p>income</p>
+          <h4 class="total-inc">+ 240</h4>
+        </div>
+        <div class="exp">
+          <p>expenses</p>
+          <h4 class="total-exp">- 240</h4>
+          <p class="total-exp-percentage">21%</p>
+        </div>
+      </div>
+      <div class="input">
+        <select name="type" class="type">
+          <option value="inc" selected>+</option>
+          <option value="exp">-</option>
+        </select>
+        <input type="text" class="desc" placeholder="Add description" />
+        <input type="text" class="value" placeholder="Value" />
+        <button class="btn">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="far"
+            data-icon="check-circle"
+            class="svg-inline--fa fa-check-circle fa-w-16"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z"
+            ></path>
+          </svg>
+        </button>
+        <div class="error">
+          Check your given informations are correct
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="inc-items">
+        <h2>income</h2>
+
+        <!-- <div id="inc-0" class="inc-item">
+          <p id="number" class="inc-number">1.</p>
+          <p class="inc-desc">%desc%</p>
+          <h4 class="inc-value">%value%</h4>
+          <button class="delete">
+            <img
+              src="./images/times-circle-regular-blue.svg"
+              alt="delete btn"
+            />
+          </button>
+        </div> -->
+
+        <!--  <div class="inc-1 inc-item">
+          <p class="inc-desc">%desc%</p>
+          <h4 class="inc-value">+ 123</h4>
+          <button class="delete">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="far"
+              data-icon="times-circle"
+              class="svg-inline--fa fa-times-circle fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm101.8-262.2L295.6 256l62.2 62.2c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 295.6l-62.2 62.2c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l62.2-62.2-62.2-62.2c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l62.2 62.2 62.2-62.2c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17z"
+              ></path>
+            </svg>
+          </button>
+        </div> -->
+      </div>
+      <div class="exp-items">
+        <h2>expenses</h2>
+
+        <!-- <div id="exp-0" class="exp-item">
+          <p id="number" class="exp-number">1.</p>
+          <p class="exp-desc">%desc%</p>
+          <h4 class="exp-value">%value%</h4>
+          <p class="exp-percent">21%</p>
+          <button class="delete">
+            <img src="./images/times-circle-regular-red.svg" alt="delete btn" />
+          </button>
+        </div> -->
+
+        <!--  <div class="exp-1 exp-item">
+          <p class="exp-desc">%desc%</p>
+          <h4 class="exp-value">+ 123</h4>
+          <button class="delete">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="far"
+              data-icon="times-circle"
+              class="svg-inline--fa fa-times-circle fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm101.8-262.2L295.6 256l62.2 62.2c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 295.6l-62.2 62.2c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l62.2-62.2-62.2-62.2c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l62.2 62.2 62.2-62.2c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17z"
+              ></path>
+            </svg>
+          </button>
+        </div>  -->
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
